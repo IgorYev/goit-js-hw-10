@@ -37,6 +37,7 @@ fetchBreeds()
   .then(breeds => {
     populateBreedSelect(breeds);
     loader.style.display = "none";
+    error.style.display = "none"
     breedSelect.style.display = "block";
   })
   .catch(err => {
