@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  color: #212121;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+.breed-select{
+    height: 25px;
+    border-radius: 3%;
+    background-color: rgb(235, 229, 220);
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    background-color: #000000;
+    background: radial-gradient(ellipse at center, #FF3D00 0%, #FF3D00 14%, #000000 15%, #000000 100%);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    position: absolute;
+    height: 16px;
+    width: 4px;
+    background: #FF3D00;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    transform-origin: 25% 0;
+    box-sizing: border-box;
+    animation: rotation 10s linear infinite;
+  }
+  .loader::before {
+    height: 22px;
+    width: 2px;
+    transform: translateX(-50%) rotate(0deg);
+    animation-duration: 1s;
+  } 
+  @keyframes rotation {
+    0%    { transform: rotate(0deg)}
+    100%  { transform: rotate(360deg)}
+  } 
+
+  
+.error{
+color: rgb(226, 10, 10);
+}
+
+.cat-info{
+    box-sizing: border-box;
+}
+img{
+    margin-top: 30px;
+    max-width: 350px;
+}
