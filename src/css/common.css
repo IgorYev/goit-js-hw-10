@@ -65,6 +65,7 @@ body {
   
 .error{
 color: rgb(226, 10, 10);
+display: none;
 }
 
 .cat-info{
